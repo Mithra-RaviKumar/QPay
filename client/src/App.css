@@ -1,0 +1,366 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #071d2b;
+  color: white;
+}
+
+button, input, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.welcome, .auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcome h1, .navbar h2 {
+  font-size: 42px;
+  color: white;
+}
+
+.welcome h1 span, .navbar h2 span {
+  color: #19c5a5;
+}
+
+.welcome h2 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.welcome p {
+  color: #b5c8d2;
+  line-height: 1.7;
+}
+
+.primary-btn, .secondary-btn {
+  width: 220px;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.primary-btn {
+  background: #13a58e;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #13a58e;
+  color: white;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 30px;
+  background: #123448;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-card h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-card input, .auth-card select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #456174;
+  border-radius: 9px;
+  background: #0b2638;
+  color: white;
+  font-size: 16px;
+}
+
+.auth-card button {
+  padding: 15px;
+  background: #13a58e;
+  color: white;
+  border: none;
+  border-radius: 9px;
+}
+
+.auth-card a {
+  color: #35d9b8;
+}
+
+.error {
+  color: #ff8d8d;
+}
+
+.dashboard {
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 6%;
+  background: #102f40;
+}
+
+.navbar h2 {
+  font-size: 30px;
+}
+
+.logout-btn, .back-btn {
+  padding: 12px 18px;
+  background: transparent;
+  border: 1px solid #13a58e;
+  border-radius: 8px;
+  color: white;
+}
+
+.dashboard-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 35px 25px;
+}
+
+.tagline {
+  color: #19c5a5;
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.wallet-card {
+  margin-top: 35px;
+  padding: 30px;
+  max-width: 500px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #087d70, #123b50);
+}
+
+.wallet-card p {
+  color: #c2e8df;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.wallet-card h2 {
+  font-size: 38px;
+  margin: 18px 0;
+}
+
+.wallet-card span {
+  color: #c2e8df;
+  font-size: 13px;
+}
+
+.dashboard-card {
+  margin-top: 25px;
+  padding: 25px;
+  background: #123b50;
+  border-radius: 15px;
+  max-width: 500px;
+  line-height: 2;
+}
+
+.topup-card form, .feature-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.topup-card input, .feature-card input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #456174;
+  border-radius: 10px;
+  background: #0b2638;
+  color: white;
+  font-size: 16px;
+}
+
+.topup-card form button, .feature-card form button,
+.feature-card > button:not(.back-btn), .payment-review button,
+.qr-result button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #13a58e;
+  color: white;
+  font-weight: bold;
+}
+
+.topup-message, .success-text {
+  color: #65dfbd;
+}
+
+.topup-card small {
+  color: #b5c8d2;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #456174;
+}
+
+.history-item small, .history-item p {
+  color: #b5c8d2;
+}
+
+.history-amount {
+  color: #65dfbd;
+  white-space: nowrap;
+}
+
+.action-link {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 17px;
+  border-radius: 12px;
+  background: #13a58e;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.feature-page {
+  min-height: 100vh;
+  padding: 20px 15px 40px;
+}
+
+.feature-page .back-btn {
+  margin-bottom: 20px;
+}
+
+.feature-card {
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 25px;
+  background: #123448;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.feature-card h1 {
+  font-size: 25px;
+}
+
+.feature-card p {
+  color: #c2d3dc;
+  line-height: 1.6;
+}
+
+.qr-result {
+  margin-top: 25px;
+}
+
+.qr-result img, .confirmation-qr {
+  display: block;
+  width: 230px;
+  max-width: 100%;
+  margin: 20px auto;
+  border-radius: 10px;
+  background: white;
+}
+
+.qr-result h2 {
+  font-size: 32px;
+}
+
+.qr-result button {
+  margin-top: 15px;
+}
+
+.payment-review {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #0b2638;
+}
+
+.payment-review h1 {
+  font-size: 36px;
+}
+
+.warning-text {
+  color: #ffc978 !important;
+  font-size: 13px;
+}
+
+#customer-qr-reader, #merchant-qr-reader {
+  width: 100%;
+  margin: 20px auto;
+  color: #111;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+#customer-qr-reader button, #merchant-qr-reader button {
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  .dashboard-content {
+    padding: 20px 15px;
+  }
+
+  .wallet-card, .dashboard-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .wallet-card h2 {
+    font-size: 32px;
+  }
+
+  .navbar {
+    padding: 12px 18px;
+  }
+
+  .auth-card {
+    padding: 22px;
+  }
+
+  .welcome h2 {
+    font-size: 25px;
+  }
+
+  .history-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .feature-card {
+    padding: 20px 15px;
+  }
+}

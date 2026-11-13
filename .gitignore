@@ -147,3 +147,15 @@ vite.config.ts.timestamp-*
 
 # Turbo Repo
 .turbo
+
+# QPay backend secrets
+server/.env
+server/venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# React
+client/node_modules/
+client/dist/
